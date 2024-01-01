@@ -6,10 +6,14 @@ import TutorialBlock from './components/Tutorials/TotorialBlock.jsx'
 function App() {
   return (
     <>
-      <div className="App px-12">
-        <Navigation className="App-navigation"/>
-        <TutorialBlock className="App-tutorialBlock"/>
-        <Footer className="App-footer"/>
+      <div className="App">
+        <div id="body" className='px-40 pb-10'>
+          <Navigation className="App-navigation"/>
+          <TutorialBlock className="App-tutorialBlock"/>
+        </div>
+        <div id="footer">
+          <Footer className="App-footer"/>
+        </div>
       </div>
     </>
   )
