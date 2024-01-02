@@ -1,13 +1,14 @@
 import './Footer.css';
+import { FormattedMessage } from 'react-intl';
 const Footer = () => {
     return (
         <>
-        <div className="bg-indigo-300 px-40 pt-16 pb-4" id="resources">
+        <div className="bg-indigo-300 dark:bg-indigo-100 px-40 pt-16 pb-4" id="resources">
             <div className="Footer grid gap-4 grid-cols-12">
-                <div>Logo</div>
-                <div>Quick Links</div>
-                <div>The Academy</div>
-                <div>Courses</div>
+                <div><FormattedMessage id="default" defaultMessage="Logo"/></div>
+                <div><FormattedMessage id="default" defaultMessage="Quick Links"/></div>
+                <div><FormattedMessage id="default" defaultMessage="The Academy"/></div>
+                <div><FormattedMessage id="default" defaultMessage="Courses"/></div>
             </div>
             <hr className="border-black border-1 mb-8"/>
             <div className='flex'>
@@ -18,9 +19,9 @@ const Footer = () => {
                 </div>
                 <div className='flex'>
                     <div className='flex'>
-                        <a>Privacy</a>
-                        <a>Terms</a>
-                        <a>Conditions</a>
+                        <a><FormattedMessage id="default" defaultMessage="Privacy"/></a>
+                        <a><FormattedMessage id="default" defaultMessage="Terms"/></a>
+                        <a><FormattedMessage id="default" defaultMessage="Conditions"/></a>
                     </div>
                     <div>
                         <p>© 2021 Dev Resources</p>

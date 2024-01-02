@@ -1,10 +1,13 @@
 import './TB.css';
+import { FormattedMessage } from 'react-intl';
 const TutorialBlock = () => {
     return (
         <>
-        <div className="bg-red-200 pt-16"  >
+        <div id="tutorials" className="bg-red-200 pt-16"  >
             <div className="TutorialBlock pt-2">
-                <h2 className="pb-5">TutorialBlock</h2>
+                <h2 className="pb-5">
+                    <FormattedMessage id="default" defaultMessage="TutorialBlock"/>
+                </h2>
             </div>
             <hr className="border-black border-1 mb-8"/>
             <div className="BlocksCage mb-8 ">
@@ -12,8 +15,10 @@ const TutorialBlock = () => {
                     <div className="">
                         <div className=""><img className=" w-full h-full object-cover object-center" src="https://images.ctfassets.net/aq13lwl6616q/1nGrrU8Es5woaV6siQ8X0r/b6dd4d950dae2a14cf1ae4a3f4877e56/Cheatsheet_-_Python.jpg?w=800&h=450&q=100&fm=webp&bg=transparent"/></div>
                         <div className="px-4 py-3">
-                            <h1 className="text-3xl">Heading</h1>
-                            <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
+                            <h1 className="text-3xl">
+                                <FormattedMessage id="default" defaultMessage="Heading"/>
+                            </h1>
+                            <p><FormattedMessage id="default" defaultMessage="Lorem Ipsum"/></p>
                             <a href="#">Link</a>
                         </div>
                     </div>
@@ -22,8 +27,10 @@ const TutorialBlock = () => {
                     <div className="flex">
                         <div><img src="https://images.ctfassets.net/aq13lwl6616q/1nGrrU8Es5woaV6siQ8X0r/b6dd4d950dae2a14cf1ae4a3f4877e56/Cheatsheet_-_Python.jpg?w=800&h=450&q=100&fm=webp&bg=transparent"/></div>
                         <div className="px-4 py-3">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
+                            <h1>
+                                <FormattedMessage id="default" defaultMessage="Heading"/>
+                            </h1>
+                                <p><FormattedMessage id="default" defaultMessage="Lorem Ipsum"/></p>
                             <a href="#">Link</a>
                         </div>
                     </div>
@@ -32,8 +39,8 @@ const TutorialBlock = () => {
                     <div className="flex">
                         <div><img src="https://images.ctfassets.net/aq13lwl6616q/1nGrrU8Es5woaV6siQ8X0r/b6dd4d950dae2a14cf1ae4a3f4877e56/Cheatsheet_-_Python.jpg?w=800&h=450&q=100&fm=webp&bg=transparent"/></div>
                         <div className="px-4 py-3">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
+                            <h1><FormattedMessage id="default" defaultMessage="Heading"/></h1>
+                                <p><FormattedMessage id="default" defaultMessage="Lorem Ipsum"/></p>
                             <a href="#">Link</a>
                         </div>
                     </div>
@@ -42,8 +49,8 @@ const TutorialBlock = () => {
                     <div className="flex">
                         <div><img src="https://images.ctfassets.net/aq13lwl6616q/1nGrrU8Es5woaV6siQ8X0r/b6dd4d950dae2a14cf1ae4a3f4877e56/Cheatsheet_-_Python.jpg?w=800&h=450&q=100&fm=webp&bg=transparent"/></div>
                         <div className="px-4 py-3">
-                            <h1>Heading</h1>
-                            <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
+                            <h1><FormattedMessage id="default" defaultMessage="Heading"/></h1>
+                                <p><FormattedMessage id="default" defaultMessage="Lorem Ipsum"/></p>
                             <a href="#">Link</a>
                         </div>
                     </div>

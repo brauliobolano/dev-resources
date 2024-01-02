@@ -1,20 +1,57 @@
 import './App.css'
+//Components
 import Navigation from './components/Navigation.jsx'
 import Footer from './components/Footer.jsx'
 import TutorialBlock from './components/Tutorials/TutorialBlock.jsx'
+// React
+import { useState, useEffect } from 'react';
+// Language translation library
+import { IntlProvider } from 'react-intl';
+import English from './locales/en.json'; 
+import Spanish from './locales/es.json'; 
+//light/dark mode library
+import { DarkThemeToggle, Flowbite } from 'flowbite-react'; 
 
 function App() {
+
+  //LANGUAGE TRANSLATION CODE STARTS HERE
+  const [language, setLanguage] = useState('es');
+
+  // set the language based on the browser language
+    useEffect(() => { 
+      const browserLanguage = navigator.language.toLowerCase();
+      if (browserLanguage.startsWith('es')) {
+        setLanguage('es');
+      } else {
+        setLanguage('en');
+      }
+    }, []);
+    const messages = language === 'es' ? Spanish : English;
+    //LANGUAGE TRANSLATION CODE ENDS HERE
+
+
+  //LIGHT/DARK MODE CODE ENDS HERE
+
   return (
-    <>
-      <div className="App">
-        <div id="body" className='px-40 pb-10'>
-          <Navigation className="App-navigation"/>
-          <TutorialBlock className="App-tutorialBlock"/>
-        </div>
-        <div id="footer">
-          <Footer className="App-footer"/>
-        </div>
-      </div>
+    <> 
+    <Flowbite>
+      <IntlProvider locale={language} messages={messages}>
+          <div className="App">
+            <div id="body" className='px-40 pb-10'>
+              <Navigation className="App-navigation" language={language} setLanguage={setLanguage}>
+                <DarkThemeToggle />
+              </Navigation>
+              
+              <TutorialBlock className="App-tutorialBlock"/>
+            </div>
+            <div id="footer">
+              <Footer className="App-footer"/>
+            </div>
+          </div>
+        </IntlProvider>
+    </Flowbite>
+
+
     </>
   )
 }
