@@ -1,7 +1,7 @@
 import './App.css'
 import Navigation from './components/Navigation.jsx'
 import Footer from './components/Footer.jsx'
-import TutorialBlock from './components/Tutorials/TotorialBlock.jsx'
+import TutorialBlock from './components/Tutorials/TutorialBlock.jsx'
 
 function App() {
   return (

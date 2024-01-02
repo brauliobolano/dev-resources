@@ -1,15 +1,16 @@
+import './TB.css';
 const TutorialBlock = () => {
     return (
         <>
-        <div className="bg-red-200">
-            <div className="TutorialBlock ">
+        <div className="bg-red-200 pt-16"  >
+            <div className="TutorialBlock pt-2">
                 <h2 className="pb-5">TutorialBlock</h2>
             </div>
             <hr className="border-black border-1 mb-8"/>
-            <div className="Blocks grid gap-4 grid-rows-3 grid-flow-col mb-8 ">
+            <div className="BlocksCage mb-8 ">
                 <div className="Block border-black border-4 bg-red-100 row-span-3">
                     <div className="">
-                        <div><img src="https://images.ctfassets.net/aq13lwl6616q/1nGrrU8Es5woaV6siQ8X0r/b6dd4d950dae2a14cf1ae4a3f4877e56/Cheatsheet_-_Python.jpg?w=800&h=450&q=100&fm=webp&bg=transparent"/></div>
+                        <div className=""><img className=" w-full h-full object-cover object-center" src="https://images.ctfassets.net/aq13lwl6616q/1nGrrU8Es5woaV6siQ8X0r/b6dd4d950dae2a14cf1ae4a3f4877e56/Cheatsheet_-_Python.jpg?w=800&h=450&q=100&fm=webp&bg=transparent"/></div>
                         <div className="px-4 py-3">
                             <h1 className="text-3xl">Heading</h1>
                             <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>

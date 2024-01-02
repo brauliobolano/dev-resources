@@ -2,7 +2,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <>
-        <div className="bg-indigo-300 px-40 pt-16 pb-4">
+        <div className="bg-indigo-300 px-40 pt-16 pb-4" id="resources">
             <div className="Footer grid gap-4 grid-cols-12">
                 <div>Logo</div>
                 <div>Quick Links</div>
