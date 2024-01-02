@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 const Footer = () => {
     return (
         <>
-        <div className="bg-indigo-300 px-40 pt-16 pb-4" id="resources">
+        <div className="bg-indigo-300 dark:bg-indigo-100 px-40 pt-16 pb-4" id="resources">
             <div className="Footer grid gap-4 grid-cols-12">
                 <div><FormattedMessage id="default" defaultMessage="Logo"/></div>
                 <div><FormattedMessage id="default" defaultMessage="Quick Links"/></div>

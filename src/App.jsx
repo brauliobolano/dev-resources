@@ -1,12 +1,16 @@
 import './App.css'
+//Components
 import Navigation from './components/Navigation.jsx'
 import Footer from './components/Footer.jsx'
 import TutorialBlock from './components/Tutorials/TutorialBlock.jsx'
-
+// React
 import { useState, useEffect } from 'react';
-import { IntlProvider } from 'react-intl'; //language translation library
-import English from './locales/en.json'; // English language translation file
-import Spanish from './locales/es.json'; // Spanish language translation file
+// Language translation library
+import { IntlProvider } from 'react-intl';
+import English from './locales/en.json'; 
+import Spanish from './locales/es.json'; 
+//light/dark mode library
+import { DarkThemeToggle, Flowbite } from 'flowbite-react'; 
 
 function App() {
 
@@ -23,30 +27,30 @@ function App() {
       }
     }, []);
     const messages = language === 'es' ? Spanish : English;
-  //LANGUAGE TRANSLATION CODE ENDS HERE
+    //LANGUAGE TRANSLATION CODE ENDS HERE
 
-  //LIGHT/DARK MODE CODE STARTS HERE
-  const [mode, setMode] = useState('light');
-  // set the mode based on the browser mode
-  useEffect(() => {
-    const browserMode = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    setMode(browserMode);
-  }, []);
+
   //LIGHT/DARK MODE CODE ENDS HERE
 
   return (
     <> 
+    <Flowbite>
       <IntlProvider locale={language} messages={messages}>
-        <div className="App">
-          <div id="body" className='px-40 pb-10'>
-            <Navigation className="App-navigation" language={language} setLanguage={setLanguage}/>
-            <TutorialBlock className="App-tutorialBlock"/>
+          <div className="App">
+            <div id="body" className='px-40 pb-10'>
+              <Navigation className="App-navigation" language={language} setLanguage={setLanguage}>
+                <DarkThemeToggle />
+              </Navigation>
+              
+              <TutorialBlock className="App-tutorialBlock"/>
+            </div>
+            <div id="footer">
+              <Footer className="App-footer"/>
+            </div>
           </div>
-          <div id="footer">
-            <Footer className="App-footer"/>
-          </div>
-        </div>
-      </IntlProvider>
+        </IntlProvider>
+    </Flowbite>
+
 
     </>
   )
