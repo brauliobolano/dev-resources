@@ -2,7 +2,10 @@
 import SPflag from "../assets/SPflag.png"; */
 import { FormattedMessage } from 'react-intl';
 import DarkModeButton from './DarkMode';
-const Navigation = () => {
+import LanguageSwitcher from './LanguageSwitcher';
+import React from "react";
+import { useState } from "react";
+const Navigation = ({ setLanguage, language }) => {
 
     return (
         <div className="fixed top-0 left-0 right-0 h-14 bg-red-100 border-b-2 border-b-indigo-500">
@@ -31,7 +34,9 @@ const Navigation = () => {
                 </div>
                 <div className="bg-indigo-200">
                     <ul className="flex h-full ">
-                        <li className="border-black border-4 px-2 pt-2">Lang</li>
+                        <li className="px-2 pt-3">
+                            <LanguageSwitcher language={language} setLanguage={setLanguage}/>
+                        </li>
                         <li className="border-black border-4 px-2">
                             <DarkModeButton />
                         </li>
