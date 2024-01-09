@@ -1,5 +1,22 @@
 .BlocksCage {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(510px, 1fr));
     grid-gap: 1rem;
+}
+@media screen and (max-width: 1148px) {
+    .BlocksCage {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+@media screen and (max-width: 768px) {
+    .BlocksCage {
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .BlocksCage {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    
 }

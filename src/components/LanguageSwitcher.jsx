@@ -29,21 +29,23 @@ const LanguageSwitcher = ({ setLanguage, language }) => {
     };
     return (
         <div>
-            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="text-white bg-blue-700 hover:bg-blue-800 text-sm inline-flex items-center" type="button" onClick={() => changeLanguageMenu()}>
-                <img className="w-6 h-6" src={currentFlag} alt={currentFlagAlt} />
-                <svg className={`w-2.5 h-2.5 ms-3 ${changeArrowIcon}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
-                </svg>
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="p-1 focus:outline-none focus:ring-2 focus:ring-blue-300 text-black text-sm inline-flex items-center hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg me-1 ms-1 my-1" type="button" onClick={() => changeLanguageMenu()}>
+                <div className="flex items-center p-1">
+                    <img className="w-6 h-6" src={currentFlag} alt={currentFlagAlt} />
+                    <svg className={`w-2.5 h-2.5 ms-3 ${changeArrowIcon}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
+                    </svg>
+                </div>
             </button>
 
             {/* <!-- Dropdown menu --> */}
-            <div id="dropdown" className={`z-10 fixed mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 ${hiddenLanguageMenu}`}>
+            <div id="dropdown" className={`z-10 fixed mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-33 dark:bg-gray-700 ${hiddenLanguageMenu}`}>
                 <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
                     <li>
-                        <a href="#" className="flex block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onClick={() => handleLanguageClick("en")}><img className="w-6 h-6" src={USflag} alt={USflagAlt} />English</a>
+                        <a href="#" className="flex block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onClick={() => handleLanguageClick("en")}><img className="w-6 h-6 pr-1" src={USflag} alt={USflagAlt} />English</a>
                     </li>
                     <li>
-                        <a href="#" className=" flex block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onClick={() => handleLanguageClick("es")}><img className="w-6 h-6" src={SPflag} alt={SPflagAlt} />Español</a>
+                        <a href="#" className=" flex block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onClick={() => handleLanguageClick("es")}><img className="w-6 h-6 pr-1" src={SPflag} alt={SPflagAlt} />Español</a>
                     </li>
                 </ul>
             </div>

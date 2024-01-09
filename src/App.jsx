@@ -37,7 +37,7 @@ function App() {
     <Flowbite>
       <IntlProvider locale={language} messages={messages}>
           <div className="App">
-            <div id="body" className='px-40 pb-10'>
+            <div id="body">
               <Navigation className="App-navigation" language={language} setLanguage={setLanguage}>
                 <DarkThemeToggle />
               </Navigation>
