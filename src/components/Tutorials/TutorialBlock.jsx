@@ -1,5 +1,8 @@
 import './TB.css';
 import { FormattedMessage } from 'react-intl';
+//LOGOS IMPORTS
+import ZeroToMasteryImage from '../../assets/ztm.jpg';
+import freeCodeCampImage from '../../assets/freecodecamp.png';
 const TutorialBlock = () => {
     return (
         <>
@@ -12,54 +15,80 @@ const TutorialBlock = () => {
                 </div>
                 <hr className="border-black border-1 mb-8"/>
                 <div className="BlocksCage mb-8 ">
-                    <div className="border-black border-4 bg-red-100">
-                        <div className="">
-                            <div className=""><img className="w-full h-full object-cover object-center" src="https://images.ctfassets.net/aq13lwl6616q/1nGrrU8Es5woaV6siQ8X0r/b6dd4d950dae2a14cf1ae4a3f4877e56/Cheatsheet_-_Python.jpg?w=800&h=450&q=100&fm=webp&bg=transparent"/></div>
-                            <div className="px-4 py-3">
-                                <h1 className="text-3xl">
-                                    <FormattedMessage id="default" defaultMessage="Heading"/>
-                                </h1>
-                                <p><FormattedMessage id="default" defaultMessage="Lorem Ipsum"/></p>
-                                <a href="#">Link</a>
-                            </div>
+                    <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row xl:flex-col xl:row-span-3 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        {/* Block One */}
+                        <div className='flex xl:h-auto w-full md:w-full lg:w-auto lg:h-full xl:w-full bg-white items-center justify-center'><img className="flex object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={ZeroToMasteryImage} alt=""/></div>
+                        <div className="flex flex-col justify-between p-4 leading-normal">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
                         </div>
-                    </div>
-                    <div className="border-black border-4 bg-red-300">
-                        <div className="">
-                            <div><img className="w-full h-full object-cover object-center" src="https://images.ctfassets.net/aq13lwl6616q/1nGrrU8Es5woaV6siQ8X0r/b6dd4d950dae2a14cf1ae4a3f4877e56/Cheatsheet_-_Python.jpg?w=800&h=450&q=100&fm=webp&bg=transparent"/></div>
-                            <div className="px-4 py-3">
-                                <h1>
-                                    <FormattedMessage id="default" defaultMessage="Heading"/>
-                                </h1>
-                                    <p><FormattedMessage id="default" defaultMessage="Lorem Ipsum"/></p>
-                                <a href="#">Link</a>
-                            </div>
+                    </a>
+                    <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        {/* Blocks others */}
+                    <div className='flex xl:h-auto w-full md:w-full lg:w-auto lg:h-full xl:h-full bg-white items-center justify-center'><img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={ZeroToMasteryImage} alt=""/></div>
+                        <div className="flex flex-col justify-between p-4 leading-normal">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
                         </div>
-                    </div>
-                    <div className="border-black border-4 bg-red-400">
-                        <div className="flex">
-                            <div><img src="https://images.ctfassets.net/aq13lwl6616q/1nGrrU8Es5woaV6siQ8X0r/b6dd4d950dae2a14cf1ae4a3f4877e56/Cheatsheet_-_Python.jpg?w=800&h=450&q=100&fm=webp&bg=transparent"/></div>
-                            <div className="px-4 py-3">
-                                <h1><FormattedMessage id="default" defaultMessage="Heading"/></h1>
-                                    <p><FormattedMessage id="default" defaultMessage="Lorem Ipsum"/></p>
-                                <a href="#">Link</a>
-                            </div>
+                    </a>
+                    <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        {/* Blocks others */}
+                    <div className='flex xl:h-auto w-full md:w-full lg:w-auto lg:h-full xl:h-full bg-white items-center justify-center'><img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={ZeroToMasteryImage} alt=""/></div>
+                        <div className="flex flex-col justify-between p-4 leading-normal">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
                         </div>
-                    </div>
-                    <div className="border-black border-4 bg-red-500">
-                        <div className="flex">
-                            <div><img src="https://images.ctfassets.net/aq13lwl6616q/1nGrrU8Es5woaV6siQ8X0r/b6dd4d950dae2a14cf1ae4a3f4877e56/Cheatsheet_-_Python.jpg?w=800&h=450&q=100&fm=webp&bg=transparent"/></div>
-                            <div className="px-4 py-3">
-                                <h1><FormattedMessage id="default" defaultMessage="Heading"/></h1>
-                                    <p><FormattedMessage id="default" defaultMessage="Lorem Ipsum"/></p>
-                                <a href="#">Link</a>
-                            </div>
+                    </a>
+                    <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        {/* Blocks others */}
+                    <div className='flex xl:h-auto w-full md:w-full lg:w-auto lg:h-full xl:h-full bg-white items-center justify-center'><img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={ZeroToMasteryImage} alt=""/></div>
+                        <div className="flex flex-col justify-between p-4 leading-normal">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
                         </div>
-                    </div>
+                    </a>
+                    {/* 
+                    /////////////////////////////////////
+                    NON VISIBLE BLOCKS UNLESS LOAD MORE
+                    //////////////////////////////////////
+                    */}
+                                        <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        {/* Blocks others */}
+                    <div className='flex xl:h-auto w-full md:w-full lg:w-auto lg:h-full xl:h-full bg-white items-center justify-center'><img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={ZeroToMasteryImage} alt=""/></div>
+                        <div className="flex flex-col justify-between p-4 leading-normal">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        </div>
+                    </a>
+                    <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        {/* Blocks others */}
+                    <div className='flex xl:h-auto w-full md:w-full lg:w-auto lg:h-full xl:h-full bg-white items-center justify-center'><img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={ZeroToMasteryImage} alt=""/></div>
+                        <div className="flex flex-col justify-between p-4 leading-normal">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        </div>
+                    </a>
+                    <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        {/* Blocks others */}
+                    <div className='flex xl:h-auto w-full md:w-full lg:w-auto lg:h-full xl:h-full bg-white items-center justify-center'><img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={ZeroToMasteryImage} alt=""/></div>
+                        <div className="flex flex-col justify-between p-4 leading-normal">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        </div>
+                    </a>
+                    <a href="#" className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        {/* Blocks others */}
+                    <div className='flex xl:h-auto w-full md:w-full lg:w-auto lg:h-full xl:h-full bg-white items-center justify-center'><img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={ZeroToMasteryImage} alt=""/></div>
+                        <div className="flex flex-col justify-between p-4 leading-normal">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        </div>
+                    </a>
+                    
                 </div>
                 <div className="LoadMore flex justify-center mb-4"><button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
                     <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Pink to orange
+                    Load More
                     </span>
                     </button>
                 </div>
