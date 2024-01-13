@@ -3,6 +3,7 @@ import './App.css'
 import Navigation from './components/Navigation.jsx'
 import Footer from './components/Footer.jsx'
 import TutorialBlock from './components/Tutorials/TutorialBlock.jsx'
+import Channels from './components/Channels/Channels.jsx'
 // React
 import { useState, useEffect } from 'react';
 // Language translation library
@@ -43,6 +44,7 @@ function App() {
               </Navigation>
               
               <TutorialBlock className="App-tutorialBlock"/>
+              <Channels className="App-channels"/>
             </div>
             <div id="footer">
               <Footer className="App-footer"/>

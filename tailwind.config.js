@@ -5,7 +5,11 @@ export default {
   'node_modules/flowbite-react/lib/esm/**/*.js',
 ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'custom-image': "url('./src/assets/brocodebackground.png')",
+      }),
+    },
   },
   variants: {
     extend: {},
