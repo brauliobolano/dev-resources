@@ -34,7 +34,7 @@ const Channels = () => {
         <div id="tutorials" className="pt-2 lg:px-10 xl:px-10 2xl:px-10 px-5 bg-white dark:bg-[#121220] dark:text-gray-200"  >
             <div className='max-w-[1340px] w-full mx-auto'>
                 <div className="TutorialBlock pt-2">
-                    <h2 className="pb-5 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h2 className="pb-5 sm:text-2xl md:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
                         <FormattedMessage id="default" defaultMessage="YouTube Channels"/>
                     </h2>
                 </div>
