@@ -7,8 +7,8 @@ const Footer = () => {
         <div className="bg-black dark:bg-gray-200 pt-16 lg:px-10 xl:px-10 2xl:px-10 px-5 text-white dark:text-black" id="footer">
             <div className='max-w-[1340px] w-full mx-auto'>
                 <hr className="h-px mb-8 bg-gray-200 border-0 dark:bg-gray-700"/>
-                <div className='flex justify-between my-8 items-center'>
-                    <div id="social" className='flex'>
+                <div className='lg:flex justify-between my-8 items-center'>
+                    <div id="social" className='flex items-center justify-center lg:justify-start'>
                         <a
                             className='border-2 p-1 mr-2 h-11 w-11 rounded-full flex items-center justify-center overflow-hidden bg-black hover:bg-white dark:hover:bg-black hover:fill-black dark:hover:fill-white fill-white dark:bg-white dark:fill-black dark:border-black border-white'
                             href="https://www.twitter.com/"
@@ -33,17 +33,17 @@ const Footer = () => {
                         <a href="https://www.buymeacoffee.com/braulio" className='flex items-center justify-center hover:underline'>
                         <FormattedMessage id="buyMeACoffee" defaultMessage="Buy me a Coffee"/>
                         </a>
-                    </div>
-                    <div className='sm:flex'>
-                        <div className='sm:flex pr-8'>
+                    </div> {/* DONE */}
+                    <div className='flex items-center justify-center lg:justify-start my-8'>
+                        <div className='sm:flex'>
                             <a className='pr-8 hover:underline'><FormattedMessage id="privacy" defaultMessage="Privacy"/></a>
                             <a className='pr-8 hover:underline'><FormattedMessage id="terms" defaultMessage="Terms"/></a>
-                            <a className='pr-8 hover:underline'><FormattedMessage id="conditions" defaultMessage="Conditions"/></a>
+                            <a className='lg:pr-8 hover:underline'><FormattedMessage id="conditions" defaultMessage="Conditions"/></a>
                         </div>
-                        <div className='flex'>
+                    </div>
+                    <div className='flex items-center justify-center lg:justify-start my-8'>
                         <a className='mr-4' href='https://icons8.com/'><FormattedMessage id="iconsBy" defaultMessage="Icons by "/><span className='underline decoration-dotted hover:decoration-green-400'>Icons8</span> </a>
-                            <p className='mr-4'>© 2021 Dev Resources</p>                         
-                        </div>
+                            <p className='lg:mr-4'>© 2021 Dev Resources</p>                         
                     </div>
                 </div>
                 <a href='https://www.youtube.com/watch?v=GtHNwT-vEpM' className='flex items-center justify-center my-8 mt-20 antialiased text-xl hover:underline hover:decoration-dashed'>
