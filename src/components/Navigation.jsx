@@ -3,7 +3,6 @@ import DarkModeButton from './DarkMode';
 import LanguageSwitcher from './LanguageSwitcher';
 import MobileMenuButton from './MobileMenuButton';
 import React, { useState } from "react";
-import Logo from '../assets/Logo.png';
 
 
 
@@ -45,8 +44,12 @@ const borderVisibility = Scrolled() ? "" : "border-b-2 border-gray-200 dark:bord
             <div className="flex max-w-[1340px] w-full mx-auto justify-between h-full">
                 <div className="">
                     <ul className='flex'>
-                        <li className="pt-2">
-                            <img src={Logo} alt="Logo" className="h-11 w-11"/>
+                        <li className="pt-2 flex items-center">
+                            
+                            <h2 className="sm:text-2xl md:text-2xl font-serif font-extrabold tracking-tight text-gray-500 dark:text-gray-300 underline decoration-double">
+                                    <span className=' underline decoration-sky-500 '>Resources</span><span className='underline decoration-pink-500 animate-pulse'>For</span><span className='underline decoration-indigo-500'>Developers
+                                    </span>
+                            </h2>
                         </li>
                         <li className="pt-2 px-3"><MobileMenuButton/></li>
                     </ul>
@@ -54,13 +57,13 @@ const borderVisibility = Scrolled() ? "" : "border-b-2 border-gray-200 dark:bord
                 <div className='flex'>
                     <div className="flex hidden w-full md:block md:w-auto">
                         <ul className="flex h-full">
-                            <li className=" px-2 pt-4 dark:hover:text-white"><a href="#top">
+                            <li className=" px-2 pt-4 dark:hover:text-white hover:font-bold"><a href="#top">
                                 <FormattedMessage id="navigation-top" defaultMessage="Home"/>
                             </a></li>
-                            <li className=" px-2 pt-4 dark:hover:text-white"><a href="#tutorials">
+                            <li className=" px-2 pt-4 dark:hover:text-white hover:font-bold"><a href="#tutorials">
                                 <FormattedMessage  id="navigation-tutorials" defaultMessage="Academies"/>
                             </a></li>
-                            <li className=" px-2 pt-4 dark:hover:text-white"><a href="#mentoring">
+                            <li className=" px-2 pt-4 dark:hover:text-white hover:font-bold"><a href="#mentoring">
                                 <FormattedMessage id='navigation-mentoring' defaultMessage="Channels" />
                             </a></li>
                         </ul>
