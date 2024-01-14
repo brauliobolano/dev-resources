@@ -25,17 +25,12 @@ const MobileMenuButton = () => {
                     </li>
                     <li>
                         <a href="#tutorials" className="flex block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onClick={handleMneuClick}>
-                        <FormattedMessage  id="navigation-tutorials" defaultMessage="Tutorials"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#resources" className=" flex block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onClick={handleMneuClick}>
-                        <FormattedMessage id="navigation-resources" defaultMessage="Resources"/>
+                        <FormattedMessage  id="navigation-tutorials" defaultMessage="Academies"/>
                         </a>
                     </li>
                     <li>
                         <a href="#mentoring" className=" flex block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white" onClick={handleMneuClick}>
-                        <FormattedMessage id='navigation-mentoring' defaultMessage="Mentoring" />
+                        <FormattedMessage id='navigation-mentoring' defaultMessage="Channels" />
                         </a>
                     </li>
                 </ul>

@@ -4,7 +4,7 @@ const YoutubeIconSVG = 'https://icons8.com/icon/37326/youtube';
 const Footer = () => {
     return (
         <>
-        <div className="bg-black dark:bg-gray-200 pt-16 lg:px-10 xl:px-10 2xl:px-10 px-5 text-white dark:text-black" id="resources">
+        <div className="bg-black dark:bg-gray-200 pt-16 lg:px-10 xl:px-10 2xl:px-10 px-5 text-white dark:text-black" id="footer">
             <div className='max-w-[1340px] w-full mx-auto'>
                 <hr className="h-px mb-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                 <div className='flex justify-between my-8 items-center'>
@@ -30,17 +30,19 @@ const Footer = () => {
                     </div>
                     <div className='sm:flex'>
                         <div className='sm:flex pr-8 '>
-                            <a className='pr-8'><FormattedMessage id="default" defaultMessage="Privacy"/></a>
-                            <a className='pr-8'><FormattedMessage id="default" defaultMessage="Terms"/></a>
-                            <a className='pr-8'><FormattedMessage id="default" defaultMessage="Conditions"/></a>
+                            <a className='pr-8'><FormattedMessage id="privacy" defaultMessage="Privacy"/></a>
+                            <a className='pr-8'><FormattedMessage id="terms" defaultMessage="Terms"/></a>
+                            <a className='pr-8'><FormattedMessage id="conditions" defaultMessage="Conditions"/></a>
                         </div>
                         <div className='flex'>
-                        <a className='mr-4' href='https://icons8.com/'>Icons by <span className='underline decoration-dotted'>Icons8</span> </a>
+                        <a className='mr-4' href='https://icons8.com/'><FormattedMessage id="iconsBy" defaultMessage="Icons by "/><span className='underline decoration-dotted'>Icons8</span> </a>
                             <p className='mr-4'>© 2021 Dev Resources</p>                         
                         </div>
                     </div>
                 </div>
-                <a href='https://www.youtube.com/watch?v=GtHNwT-vEpM' className='flex items-center justify-center my-8 mt-20 antialiased text-xl'>"And the world's gonna know your name"</a>
+                <a href='https://www.youtube.com/watch?v=GtHNwT-vEpM' className='flex items-center justify-center my-8 mt-20 antialiased text-xl'>
+                <FormattedMessage id="finalPhrase" defaultMessage="And the world's gonna know your name"/>
+                    </a>
             </div>
         </div>
         </>

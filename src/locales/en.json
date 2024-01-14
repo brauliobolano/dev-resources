@@ -1,6 +1,44 @@
 {
+    "............Navigation Bar..............":"............Navigation Bar..............;",
     "navigation-top" : "Home",
-    "navigation-tutorials" : "Tutorials",
-    "navigation-resources" : "Resources",
-    "navigation-mentoring" : "Mentoring"
+    "navigation-tutorials" : "Academies", 
+    "navigation-mentoring" : "Channels",
+    "..............................................":"...............................;",
+
+
+
+    "............Tutorial Block..............":"............Tutorial Block..............;",
+    "blockOneText": "Access 1,000+ hours of coding, A.I., UX/UI, and more. More than 60 up-to-date tech courses online. Join a community of 400,000+.",
+    "blockTwoText": "Since 2014, 40,000+ freeCodeCamp.org grads landed roles at Apple, Google, Microsoft, and more. The curriculum focuses on essential job-related skills.",
+    "blockThreeText" : "Top web development hub, provides free resources on severla programming languages. With 4 million+ Q&A and a user-friendly search.",
+    "blockFourText" : "Explore Web Dev, Data Science, Comp Sci, Design, and Cybersecurity courses.",
+    "..............................................":"...............................;",
+
+
+    "............Channels..............":"............Channels..............;",
+    "youtubeChannels" : "Youtube Channels",
+    "blockOneChannels": "Focused on in-depth tutorials, the team's YouTube channel offers 1,400+ comprehensive videos for thorough learning experiences.",
+    "blockTwoChannels" : "Stay effortlessly updated with small videos, delivering crucial info on the latest tech \"with humor\".",
+    "blockThreeChannels" : "On this channel, Sahil and Sarra share their experiences working on Google and Microsoft, to help you fast-track your career in Tech." ,
+    "blockFourChannels" : "Join for skills, jobs, and a fun journey. Weekly videos cover tech topics, soft skills, with AMA sessions. Propel your career with them.",
+
+    "blockHiddenChannelsOne": "Start coding with Ania, experienced with Google, Amazon, Microsoft. Learn through fun projects like battleships or Zelda.",
+    "blockHiddenChannelsTwo": "Learn web development effectively, from beginner to full-stack. For pros, deep dives into the latest best practices.",
+    "blockHiddenChannelsThree" : "Learn to code for free! This channel is for those who can not afford college or bootcamps. No gimmicks, just genuine education.",
+    "blockHiddenChannelsFour" : "A decade as a top Full Stack developer, now passionate about helping others. Impressive feat: cloned everyday apps.",
+    
+    "loadMore": "Load more",
+    "..............................................":"...............................;",
+
+
+    "............Footer..............":"............Footer..............;",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "conditions": "Conditions",
+    "iconsBy": "Icons by ",
+    "finalPhrase": "\" And the world's gonna know your name \"",
+    "..............................................":"...............................;"
+
+
+
 }

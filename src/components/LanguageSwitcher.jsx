@@ -29,7 +29,7 @@ const LanguageSwitcher = ({ setLanguage, language }) => {
     };
     return (
         <div>
-            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="p-1 focus:outline-none focus:ring-2 focus:ring-blue-300 text-black text-sm inline-flex items-center hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg me-1 ms-1 my-1" type="button" onClick={() => changeLanguageMenu()}>
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" className="p-1 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:focus:ring-gray-700 text-black dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 text-sm inline-flex items-center hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg me-1 ms-1 my-1" type="button" onClick={() => changeLanguageMenu()}>
                 <div className="flex items-center p-1">
                     <img className="w-6 h-6" src={currentFlag} alt={currentFlagAlt} />
                     <svg className={`w-2.5 h-2.5 ms-3 ${changeArrowIcon}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">

@@ -58,13 +58,10 @@ const borderVisibility = Scrolled() ? "" : "border-b-2 border-gray-200 dark:bord
                                 <FormattedMessage id="navigation-top" defaultMessage="Home"/>
                             </a></li>
                             <li className=" px-2 pt-4 dark:hover:text-white"><a href="#tutorials">
-                                <FormattedMessage  id="navigation-tutorials" defaultMessage="Tutorials"/>
-                            </a></li>
-                            <li className=" px-2 pt-4 dark:hover:text-white"><a href="#resources">
-                                <FormattedMessage id="navigation-resources" defaultMessage="Resources"/>
+                                <FormattedMessage  id="navigation-tutorials" defaultMessage="Academies"/>
                             </a></li>
                             <li className=" px-2 pt-4 dark:hover:text-white"><a href="#mentoring">
-                                <FormattedMessage id='navigation-mentoring' defaultMessage="Mentoring" />
+                                <FormattedMessage id='navigation-mentoring' defaultMessage="Channels" />
                             </a></li>
                         </ul>
                     </div>

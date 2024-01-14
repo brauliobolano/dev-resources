@@ -1,6 +1,41 @@
 {
+    "............Navigation Bar..............":"............Navigation Bar..............;",
     "navigation-top" : "Home",
-    "navigation-tutorials" : "Tutoriales",
-    "navigation-resources" : "Recursos",
-    "navigation-mentoring" : "Mentoría"
+    "navigation-tutorials" : "Academias",
+    "navigation-mentoring" : "Canales",
+    "..............................................":"...............................;",
+
+
+    "............Tutorial Block..............":"............Tutorial Block..............;",
+    "blockOneText": "Accede a más de 1,000 horas de programación, inteligencia artificial, UX/UI y más. Más de 60 cursos tecnológicos actualizados en línea. Únete a una comunidad de más de 400,000.",
+    "blockTwoText": "Desde 2014, más de 40,000 graduados de freeCodeCamp.org han conseguido puestos en Apple, Google, Microsoft y más. El plan de estudios se centra en habilidades laborales esenciales.",
+    "blockThreeText": "Principal centro de desarrollo web, ofrece recursos gratuitos en varios lenguajes de programación. Con más de 4 millones de preguntas y respuestas y un sistema de búsqueda fácil de usar.",
+    "blockFourText": "Explora cursos de Desarrollo Web, Ciencia de Datos, Ciencias de la Computación, Diseño y Ciberseguridad.",
+    "..............................................":"...............................;",
+
+
+    "............Channels..............":"............Channels..............;",
+    "youtubeChannels" : "Canales de Youtube",
+    "blockOneChannels": "Contarás con tutoriales que profundizan en cada tema, el equipo que trabaja en este canal ofrece más de 1,400 videos completos para experiencias de aprendizaje exhaustivas.",
+    "blockTwoChannels" : "Mantente actualizado de manera sencilla con videos cortos que ofrecen información crucial sobre las últimas tecnologías, siempre \"con un toque de humor\".",
+    "blockThreeChannels" : "En este canal, Sahil y Sarra comparten sus experiencias trabajando en Google y Microsoft, para ayudarte a acelerar tu carrera en Tecnología.",
+    "blockFourChannels" : "Suscríbete para adquirir habilidades mientras disfrutar de un viaje divertido. Los videos semanales abordan temas tecnológicos, habilidades sociales, y sesiones de preguntas y respuestas.",
+
+    "blockHiddenChannelsOne": "Comienza a programar con Ania, con experiencia en Google, Amazon y Microsoft. Aprende a través de proyectos divertidos como batallas navales o Zelda.",
+    "blockHiddenChannelsTwo": "Aprende desarrollo web de manera efectiva, desde principiante a avanzado. Para profesionales que desean profundizar en las últimas y mejores prácticas.",
+    "blockHiddenChannelsThree" : "¡Aprende a programar de forma gratuita! Este canal es para aquellos que no pueden costear la universidad o bootcamps. Sin trucos, solo educación genuina.",
+    "blockHiddenChannelsFour" : "Con una década como destacado desarrollador web, ahora apasionado por ayudar a otros. Aprenderás a desarrollar clones de tus aplicaciones de uso diario.",
+    
+    "loadMore": "Cargar más",
+    "..............................................":"...............................;",
+
+
+    "............Footer..............":"............Footer..............;",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "conditions": "Condiciones",
+    "iconsBy": "Íconos de ",
+    "finalPhrase": "\" Y el mundo conocerá tu nombre \"" ,
+    "..............................................":"...............................;"
+
 }
