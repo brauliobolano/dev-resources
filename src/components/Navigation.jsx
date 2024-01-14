@@ -2,6 +2,7 @@ import { FormattedMessage } from 'react-intl';
 import DarkModeButton from './DarkMode';
 import LanguageSwitcher from './LanguageSwitcher';
 import MobileMenuButton from './MobileMenuButton';
+import Logo from '../assets/android-chrome-192x192.png'
 import React, { useState } from "react";
 
 
@@ -40,18 +41,22 @@ const borderVisibility = Scrolled() ? "" : "border-b-2 border-gray-200 dark:bord
 
 
     return (
-        <div id="navigationBar" className={`fixed right-0 left-0 lg:px-10 xl:px-10 2xl:px-10 px-5 h-14 ${borderVisibility} bg-white dark:bg-[#121220] dark:text-gray-400`}>
+        <div id="navigationBar" className={`fixed right-0 left-0 lg:px-10 xl:px-10 2xl:px-10 sm:px-5 px-2 h-14 ${borderVisibility} bg-white dark:bg-[#121220] dark:text-gray-400`}>
             <div className="flex max-w-[1340px] w-full mx-auto justify-between h-full">
                 <div className="">
-                    <ul className='flex'>
-                        <li className="pt-2 flex items-center">
-                            
-                            <h2 className="sm:text-2xl md:text-2xl font-serif font-extrabold tracking-tight text-gray-500 dark:text-gray-300 underline decoration-double">
-                                    <span className=' underline decoration-sky-500 '>Resources</span><span className='underline decoration-pink-500 animate-pulse'>For</span><span className='underline decoration-indigo-500'>Developers
+                    <ul className='flex '>
+                        <li className="mt-2 px-1"><MobileMenuButton/></li>
+                        <li className="flex justify-center items-center ">
+                            <img className='w-8 h-8 mt-2 mr-2' src={Logo}/>                          
+                            <h2 className="text-xl mt-1 md:text-2xl font-serif tracking-tight text-gray-500 underline">
+                                    <span className=' underline decoration-sky-500 '>
+                                    <span className='underline decoration-indigo-500'>
+                                            <FormattedMessage id="navigation-top-title-developers" defaultMessage="Developers"/>
+                                    </span>
+                                        <FormattedMessage id="navigation-top-title-resources animate-pulse" defaultMessage="Resources"/>
                                     </span>
                             </h2>
-                        </li>
-                        <li className="pt-2 px-3"><MobileMenuButton/></li>
+                        </li>      
                     </ul>
                 </div>
                 <div className='flex'>
