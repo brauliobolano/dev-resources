@@ -36,7 +36,7 @@ const TutorialBlock = () => {
                 <hr className="h-px mb-8 bg-gray-200 border-0 dark:bg-gray-700"/>
                 <div className="BlocksCage mb-8 ">
                     {/* Blocks One */}
-                    <a href="https://zerotomastery.io/" className="flex max-xl:grid-cols-4 lg:grid xl:grid-rows-3 xl:grid-flow-row flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row xl:flex-col xl:row-span-3 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">   
+                    <a href="https://zerotomastery.io/" className="flex max-xl:grid-cols-4 lg:grid xl:grid-rows-3 xl:grid-flow-row flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row xl:flex-col xl:row-span-3 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 shadow-xl shadow-inner">   
                         <div className='flex xl:h-auto w-full md:w-full lg:w-auto lg:h-full xl:w-full 2xl:w-full xl:h-full xl:col-span-3 xl:row-span-3 bg-white items-center justify-center border-b-2 lg:border-b-0 lg:border-r-2 xl:border-b-2 xl:border-r-0  border-gray-100'><img className="flex object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 xl:w-3/5 md:rounded-none md:rounded-s-lg" src={ZeroToMasteryImage} alt=""/></div>
                         <div className="col-span-3 flex flex-col justify-between p-4 leading-normal">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Zero to Mastery Academy</h5>
@@ -47,7 +47,7 @@ const TutorialBlock = () => {
                         </div>
                     </a>
                     {/* Blocks Two */}
-                    <a href="https://www.freecodecamp.org/" className="flex lg:grid lg:grid-cols-4 flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <a href="https://www.freecodecamp.org/" className="flex lg:grid lg:grid-cols-4 flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 shadow-xl shadow-inner">
                     <div className='flex xl:h-auto w-full md:w-full lg:w-auto lg:h-full xl:h-full bg-[#0A0A22] items-center justify-center'><img className="flex object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={freeCodeCampImage} alt=""/></div>
                         <div className=" col-span-3 flex flex-col justify-between p-4 leading-normal">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">freeCodeCamp</h5>
@@ -58,7 +58,7 @@ const TutorialBlock = () => {
                         </div>
                     </a>
                     {/* Blocks Three */}
-                    <a href="https://www.w3schools.com/" className="flex lg:grid lg:grid-cols-4 flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <a href="https://www.w3schools.com/" className="flex lg:grid lg:grid-cols-4 flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 shadow-xl shadow-inner">
                     <div className='flex xl:h-auto w-full md:w-full lg:w-auto lg:h-full xl:h-full bg-white items-center justify-center border-b-2 lg:border-b-0 lg:border-r-2 xl:border-b-0 xl:border-r-2  border-gray-100'><img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={w3schoolsImage} alt=""/></div>
                         <div className="col-span-3 flex flex-col justify-between p-4 leading-normal">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">W3Schools</h5>
@@ -68,7 +68,7 @@ const TutorialBlock = () => {
                         </div>
                     </a>
                     {/* Blocks Four */}
-                    <a href="https://www.codecademy.com/learn" className="flex lg:grid lg:grid-cols-4 flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <a href="https://www.codecademy.com/learn" className="flex lg:grid lg:grid-cols-4 flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 shadow-xl shadow-inner">
                     <div className='flex xl:h-auto w-full md:w-full lg:w-auto lg:h-full xl:h-full bg-[#F2F2F2] items-center justify-center'><img className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={CodeAcademyImage} alt=""/></div>
                         <div className="col-span-3 flex flex-col justify-between p-4 leading-normal">
                             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Code Academy</h5>
