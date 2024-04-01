@@ -4,6 +4,7 @@ import Navigation from './components/Navigation.jsx'
 import Footer from './components/Footer.jsx'
 import TutorialBlock from './components/Tutorials/TutorialBlock.jsx'
 import Channels from './components/Channels/Channels.jsx'
+import Hero from './components/Hero/Hero.jsx'
 // React
 import { useState, useEffect } from 'react';
 // Language translation library
@@ -42,7 +43,7 @@ function App() {
               <Navigation className="App-navigation" language={language} setLanguage={setLanguage}>
                 <DarkThemeToggle />
               </Navigation>
-              
+              <Hero className="App-hero"/>
               <TutorialBlock className="App-tutorialBlock"/>
               <Channels className="App-channels"/>
             </div>
